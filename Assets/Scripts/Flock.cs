@@ -33,7 +33,7 @@ public class Flock : MonoBehaviour {
         } else if (Physics.Raycast(transform.position, this.transform.forward * 50.0f, out hit)) {
 
             turning = true;
-            Debug.DrawRay(this.transform.position, this.transform.forward * 50.0f, Color.red);
+           // Debug.DrawRay(this.transform.position, this.transform.forward * 50.0f, Color.red);
             direction = Vector3.Reflect(this.transform.forward, hit.normal);
         } 
                 
