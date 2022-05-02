@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - PhysicsBlock
+  - AirBlock
+  - IndoorGreen
+  - LightBlock
+  - OpenSpaceBlock
   layers:
   - Default
   - TransparentFX

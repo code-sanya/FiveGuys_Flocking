@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class FlockCollision : MonoBehaviour
 {
-    public float score = 25;
+    private float score = 1f;
+    public Material Good;
+    public Material Bad;
 
     private void OnCollisionEnter(Collision col)
     {
+        MeshRenderer mr = this.GetComponent<MeshRenderer>();
+
+
         if (col.gameObject.name == "PhysicsBlock") ;
         {
             //Destroy(col.gameObject);
@@ -15,10 +20,15 @@ public class FlockCollision : MonoBehaviour
             score -= 1;
             Debug.Log(score);
         }
-        if (score == 0)
+        if (score == 25)
         {
-            Destroy(this.gameObject);
-            Debug.Log("Room Destroyed");
+            mr.material = Bad;
+            //Destroy(this.gameObject);
+            //Debug.Log("Room Destroyed");
+        }
+        if (score == 5)
+        {
+            mr.material = Good;
         }
     }
 

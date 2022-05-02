@@ -5,14 +5,15 @@ using System.Linq;
 
 public class EfficiencyCount : MonoBehaviour
 {
-    public GameObject Height;
+    private GameObject block;
 
-    public Material Main;
-    public Material Alt;
-    public Material Alt1;
-    public Material Alt2;
+    public Material Good;
+    public Material Bad;
     public float Score = 1f;
-    //private List<Guest> In = new List<Guest>();
+    private List<GameObject> Airblocks = new List<GameObject>();
+    private List<GameObject> Lightblocks = new List<GameObject>();
+    private List<GameObject> OpenSpaceblocks = new List<GameObject>();
+    private List<GameObject> IndoorGreenblocks = new List<GameObject>();
 
 
     // Start is called before the first frame update
@@ -24,46 +25,58 @@ public class EfficiencyCount : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MeshRenderer mr = this.GetComponent<MeshRenderer>();
-
-        /*List<Guest> guests = GuestManager.Instance.GuestList();
-
-        foreach (Guest guest in guests)
         {
-            if (guest.Status == Guest.Action.BATHING)
-            {
+            MeshRenderer mr = this.GetComponent<MeshRenderer>();
 
-                Vector3 Floor = Height.transform.position;
-                if (!In.Contains(guest) && Mathf.Abs(guest.transform.position.y - Floor.y) < 1f)
+            List<GameObject> Air = new List<GameObject>();
+
+           /*List<Guest> guests = GuestManager.Instance.GuestList();
+
+            foreach  (AirBlockInstantiator air in _airblocks)
+           foreach (Guest guest in guests)
+            {
+                if (guest.Status == Guest.Action.BATHING)
                 {
-                    In.Add(guest);
+
+                    Vector3 Floor = Height.transform.position;
+                    if (!In.Contains(guest) && Mathf.Abs(guest.transform.position.y - Floor.y) < 1f)
+                    {
+                        In.Add(guest);
+                    }
+
                 }
 
-            }
+                Score = In.Count;*/
 
-            Score = In.Count;*/
-
-            if (Score == 2)
+                if (Score == 2)
             {
-                mr.material = Main;
+                mr.material = Good;
             }
 
             else if (Score == 8)
             {
-                mr.material = Alt;
+                mr.material = Bad;
             }
-
-            else if (Score == 15)
-            {
-                mr.material = Alt1;
-            }
-
-            else if (Score == 20)
-            {
-                mr.material = Alt2;
-            }
-
-
-
         }
+
+
     }
+
+   /* private void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.name == "PhysicsBlock") ;
+        {
+            //Destroy(col.gameObject);
+            //Debug.Log("Projectile Destroyed");
+            score -= 1;
+            Debug.Log(score);
+        }
+        if (score == 0)
+        {
+            Destroy(this.gameObject);
+            Debug.Log("Room Destroyed");
+        }
+    }*/
+}
+
+    
