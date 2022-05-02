@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BlockInstantiator : MonoBehaviour
 {
-    public GameObject Prefab;
+    public GameObject Prefab;    
+    //private List<Prefabs> In = new List<Prefabs>();
 
     // Start is called before the first frame update
     void Start()
