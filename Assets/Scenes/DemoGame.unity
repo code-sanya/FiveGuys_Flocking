@@ -1594,14 +1594,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 639309248}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e64c02eb8c47f6846a618a83d24d6b69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Good: {fileID: 2100000, guid: 2d5cb799882e9b244ba7a420bcf21d59, type: 2}
   Bad: {fileID: 2100000, guid: d6bd7ee21a4221946817b00f06b37277, type: 2}
-  Score: 1
 --- !u!1 &655145549
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,14 +2276,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916856132}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e64c02eb8c47f6846a618a83d24d6b69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Good: {fileID: 2100000, guid: 2d5cb799882e9b244ba7a420bcf21d59, type: 2}
   Bad: {fileID: 2100000, guid: d6bd7ee21a4221946817b00f06b37277, type: 2}
-  Score: 1
 --- !u!1 &942566256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,7 +3078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1332070056
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3486,7 +3484,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 2
+  m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -3589,7 +3587,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_TargetDisplay: 2
+  m_TargetDisplay: 0
 --- !u!224 &1490236763
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4321,14 +4319,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1796120696}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e64c02eb8c47f6846a618a83d24d6b69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Good: {fileID: 2100000, guid: 2d5cb799882e9b244ba7a420bcf21d59, type: 2}
   Bad: {fileID: 2100000, guid: d6bd7ee21a4221946817b00f06b37277, type: 2}
-  Score: 1
 --- !u!1 &1872254640
 GameObject:
   m_ObjectHideFlags: 0
@@ -4375,14 +4372,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fishPrefab: {fileID: 4415350863825230380, guid: fd8cfd6ac6696e043992c1311541b392, type: 3}
   Building: {fileID: 0}
-  numFish: 10
+  numFish: 15
   allFish: []
   swimLimits: {x: 5, y: 5, z: 5}
   goalPos: {x: 0, y: 0, z: 0}
   minSpeed: 5
   maxSpeed: 10
   neighbourDistance: 6.5
-  rotationSpeed: 2.44
+  rotationSpeed: 3
 --- !u!64 &1872254643
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4551,7 +4548,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
+  m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
@@ -5256,7 +5253,7 @@ Camera:
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
+  m_TargetDisplay: 2
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -5576,14 +5573,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114030249}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e64c02eb8c47f6846a618a83d24d6b69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Good: {fileID: 2100000, guid: 2d5cb799882e9b244ba7a420bcf21d59, type: 2}
   Bad: {fileID: 2100000, guid: d6bd7ee21a4221946817b00f06b37277, type: 2}
-  Score: 1
 --- !u!1 &2126176076
 GameObject:
   m_ObjectHideFlags: 0
