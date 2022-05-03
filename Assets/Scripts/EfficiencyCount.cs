@@ -9,11 +9,10 @@ public class EfficiencyCount : MonoBehaviour
 
     public Material Good;
     public Material Bad;
-    public float Score = 1f;
-    private List<GameObject> Airblocks = new List<GameObject>();
-    private List<GameObject> Lightblocks = new List<GameObject>();
-    private List<GameObject> OpenSpaceblocks = new List<GameObject>();
-    private List<GameObject> IndoorGreenblocks = new List<GameObject>();
+    public float Score = 1f;    
+
+    private List<GameObject> Blocks = new List<GameObject>();
+    
 
 
     // Start is called before the first frame update
@@ -26,37 +25,7 @@ public class EfficiencyCount : MonoBehaviour
     void Update()
     {
         {
-            MeshRenderer mr = this.GetComponent<MeshRenderer>();
-
-            List<GameObject> Air = new List<GameObject>();
-
-           /*List<Guest> guests = GuestManager.Instance.GuestList();
-
-            foreach  (AirBlockInstantiator air in _airblocks)
-           foreach (Guest guest in guests)
-            {
-                if (guest.Status == Guest.Action.BATHING)
-                {
-
-                    Vector3 Floor = Height.transform.position;
-                    if (!In.Contains(guest) && Mathf.Abs(guest.transform.position.y - Floor.y) < 1f)
-                    {
-                        In.Add(guest);
-                    }
-
-                }
-
-                Score = In.Count;*/
-
-                if (Score == 2)
-            {
-                mr.material = Good;
-            }
-
-            else if (Score == 8)
-            {
-                mr.material = Bad;
-            }
+            CompareProportion();
         }
 
 
@@ -77,6 +46,38 @@ public class EfficiencyCount : MonoBehaviour
             Debug.Log("Room Destroyed");
         }
     }*/
+
+    private void CompareProportion()
+    {
+        MeshRenderer mr = this.GetComponent<MeshRenderer>();
+        int a = 0;
+        int b = 0;
+
+        for (int i = 0; i < Blocks.Count; i++)
+        {
+            if (Blocks[i].tag == "AirBlocks")
+            {
+                a++;
+            }
+        }
+        for (int i = 0; i < Blocks.Count; i++)
+        {
+            if (Blocks[i].tag == "LightBlocks")
+            {
+                b++;
+            }
+
+            if (b / a == 2 && b%a == 0 )
+            {
+                mr.material = Good;
+            }
+
+            if (a / b  == 2 && a % b == 0)
+            {
+                mr.material = Bad;
+            }
+        }
+    }
 }
 
     

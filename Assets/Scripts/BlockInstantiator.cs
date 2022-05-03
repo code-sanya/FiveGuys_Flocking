@@ -5,26 +5,26 @@ using UnityEngine;
 public class BlockInstantiator : MonoBehaviour
 {
     public GameObject Prefab;
-    private List<GameObject> _airblocks;
+    private List<GameObject> _blocks;
 
     // Start is called before the first frame update
     void Start()
     {
-       
+        _blocks = new List<GameObject>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("Mouse Click");
             GameObject block = Instantiate(Prefab, this.transform.position, Quaternion.identity);
-            _airblocks.Add(block);
+            _blocks.Add(block);
             //Instantiate(Prefab,this.transform.position, Quaternion.identity);
 
         }
 
-      
+
     }
 }

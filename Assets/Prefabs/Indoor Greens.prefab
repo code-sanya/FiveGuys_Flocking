@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6960825509179121055}
   m_Layer: 6
   m_Name: Indoor Greens
-  m_TagString: PhysicsBlock
+  m_TagString: IndoorGreen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
