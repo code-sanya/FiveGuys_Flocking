@@ -9,6 +9,7 @@ TagManager:
   - IndoorGreen
   - LightBlock
   - OpenSpaceBlock
+  - Sticky
   layers:
   - Default
   - TransparentFX
