@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.883
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7899051, g: 0.76407194, b: 0.76747066, a: 0.883}
+  m_IndirectSpecularColor: {r: 0.789905, g: 0.76407194, b: 0.76747066, a: 0.883}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2975,7 +2975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &609836183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5954,7 +5954,7 @@ MonoBehaviour:
   care: {fileID: 7217374524750705638, guid: 85cfd707a0e5d264181f80b293376891, type: 3}
   water: {fileID: 7217374524750705638, guid: d0b7e66c10332804db68f9cbdb9dfd22, type: 3}
   seed: {fileID: 7217374524750705638, guid: 41cc6213bc1e9b149984e33ce710d5ae, type: 3}
-  soil: {fileID: 0}
+  soil: {fileID: 7217374524750705638, guid: b5982ea9564a70743b4f7e79785c16ae, type: 3}
 --- !u!4 &1248973517
 Transform:
   m_ObjectHideFlags: 0
@@ -6228,7 +6228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1328068605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8556,7 +8556,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1822442998
 MonoBehaviour:
   m_ObjectHideFlags: 0
