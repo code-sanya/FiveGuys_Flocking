@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.883
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.789905, g: 0.76407194, b: 0.76747066, a: 0.883}
+  m_IndirectSpecularColor: {r: 0.7899051, g: 0.76407194, b: 0.76747066, a: 0.883}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2988,7 +2988,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c094bd2c1465640a157c7e29a99a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 7217374524750705638, guid: 41cc6213bc1e9b149984e33ce710d5ae, type: 3}
+  care: {fileID: 0}
+  water: {fileID: 0}
+  seed: {fileID: 0}
+  soil: {fileID: 0}
 --- !u!4 &609836184
 Transform:
   m_ObjectHideFlags: 0
@@ -5948,7 +5951,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c094bd2c1465640a157c7e29a99a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 7217374524750705638, guid: 85cfd707a0e5d264181f80b293376891, type: 3}
+  care: {fileID: 7217374524750705638, guid: 85cfd707a0e5d264181f80b293376891, type: 3}
+  water: {fileID: 7217374524750705638, guid: d0b7e66c10332804db68f9cbdb9dfd22, type: 3}
+  seed: {fileID: 7217374524750705638, guid: 41cc6213bc1e9b149984e33ce710d5ae, type: 3}
+  soil: {fileID: 0}
 --- !u!4 &1248973517
 Transform:
   m_ObjectHideFlags: 0
@@ -6235,7 +6241,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c094bd2c1465640a157c7e29a99a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 7217374524750705638, guid: b5982ea9564a70743b4f7e79785c16ae, type: 3}
+  care: {fileID: 0}
+  water: {fileID: 0}
+  seed: {fileID: 0}
+  soil: {fileID: 0}
 --- !u!4 &1328068606
 Transform:
   m_ObjectHideFlags: 0
@@ -8560,7 +8569,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04c094bd2c1465640a157c7e29a99a0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 7217374524750705638, guid: d0b7e66c10332804db68f9cbdb9dfd22, type: 3}
+  care: {fileID: 0}
+  water: {fileID: 0}
+  seed: {fileID: 0}
+  soil: {fileID: 0}
 --- !u!4 &1822442999
 Transform:
   m_ObjectHideFlags: 0

@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class BlockInstantiator : MonoBehaviour
 {
-    public GameObject Prefab;
+    public GameObject care;
+    public GameObject water;
+    public GameObject seed;
+    public GameObject soil;
     private List<GameObject> _blocks;
 
     // Start is called before the first frame update
@@ -16,15 +19,37 @@ public class BlockInstantiator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButtonDown("North"))
         {
-            Debug.Log("Mouse Click");
-            GameObject block = Instantiate(Prefab, this.transform.position, Quaternion.identity);
+            //Debug.Log("Mouse Click");
+            GameObject block = Instantiate(care, this.transform.position, Quaternion.identity);
             _blocks.Add(block);
             //Instantiate(Prefab,this.transform.position, Quaternion.identity);
-
         }
 
+        if (Input.GetButtonDown("South"))
+        {
+            //Debug.Log("Mouse Click");
+            GameObject block = Instantiate(water, this.transform.position, Quaternion.identity);
+            _blocks.Add(block);
+            //Instantiate(Prefab,this.transform.position, Quaternion.identity);
+        }
+
+        if (Input.GetButtonDown("East"))
+        {
+            //Debug.Log("Mouse Click");
+            GameObject block = Instantiate(seed, this.transform.position, Quaternion.identity);
+            _blocks.Add(block);
+            //Instantiate(Prefab,this.transform.position, Quaternion.identity);
+        }
+
+        if (Input.GetButtonDown("West"))
+        {
+            //Debug.Log("Mouse Click");
+            GameObject block = Instantiate(soil, this.transform.position, Quaternion.identity);
+            _blocks.Add(block);
+            //Instantiate(Prefab,this.transform.position, Quaternion.identity);
+        }
 
     }
 }
