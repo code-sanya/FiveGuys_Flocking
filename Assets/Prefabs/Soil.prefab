@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8472116601323479221}
   - component: {fileID: 6960825509179121055}
   m_Layer: 6
-  m_Name: Soil
+  m_Name: soil
   m_TagString: Sticky
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -18,9 +18,23 @@ public class Dialogue : MonoBehaviour
 
     public int waterCount = 0;
     public int seedCount = 0;
+
+    /*public GameObject water;
+    public GameObject care;
+    public GameObject soil;
+    public GameObject seed;*/
+
+
     private void OnTriggerEnter(Collider col)
     {
-        if (col.tag != "Sticky") { return; }
+        /*if (gameobject.name == "water")
+        {
+            //waterCount -= 1;
+            //seedCount -= 1;
+            ////instantiate
+            return;
+        }*/
+        //if (col.tag != "Sticky") { return; }
         Canvas canvas = FindObjectOfType<Canvas>();
         if (canvas == null) { return; }
 
