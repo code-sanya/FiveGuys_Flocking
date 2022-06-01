@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 119465956719581714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -182.12, y: 3.33, z: -240.78}
-  m_LocalScale: {x: 5.934, y: 6.8709, z: 10.280417}
+  m_LocalScale: {x: 245.8, y: 30.67, z: 235.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -67,4 +67,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Balloon: {fileID: 2252157382423893749, guid: ebed8bf883107c9438f254e54573c387, type: 3}
-  Text: This is a hill to climb...
+  Text: 
+  audio1: {fileID: 0}
+  clips: []
+  Appear:
+  - {fileID: 0}
+  water: {fileID: 7217374524750705638, guid: d0b7e66c10332804db68f9cbdb9dfd22, type: 3}
+  care: {fileID: 7217374524750705638, guid: 85cfd707a0e5d264181f80b293376891, type: 3}
+  soil: {fileID: 7217374524750705638, guid: b5982ea9564a70743b4f7e79785c16ae, type: 3}
+  seed: {fileID: 7217374524750705638, guid: 41cc6213bc1e9b149984e33ce710d5ae, type: 3}
+  Plant1: {fileID: 1868225631832398372, guid: 8ee7d1ee5fea5a54e9d9c5165f2aa153, type: 3}
+  Plant2: {fileID: 2558342676148221464, guid: 92704b9221c03e64dab127f375550819, type: 3}
+  Plant3: {fileID: 3755313506238245184, guid: 83551b8e2f8bf7449a0615fcf0e3fda3, type: 3}
+  Plant4: {fileID: 8910413008023367145, guid: fc5150e9846ec3844a73f7831f367dea, type: 3}
+  Plant5: {fileID: 2081717307340490296, guid: ad476b0dc0ec7374fbf768c1f1accae5, type: 3}
+  Plant6: {fileID: 2678862628904902871, guid: cfd427f811b850d44ada7ae8678995c0, type: 3}
+  Plant7: {fileID: 2040688405836524963, guid: e641fa322133dcb40a25880bba66f2b3, type: 3}
+  Plant8: {fileID: 5293910336720516883, guid: 818d3debb71cd6d4886d704f9deec91f, type: 3}
+  Plant9: {fileID: 4593982900917438199, guid: fc03ac95c53ff0846b63bd4040be1c0a, type: 3}
+  Plant10: {fileID: 6132367260988100995, guid: 9ac70a3ba337783479e2bb00701150a1, type: 3}
+  Imscript: {fileID: 0}
+  matchnum: 0
+  BIscript: {fileID: 0}
+  careCount: 0
+  waterCount: 0
+  seedCount: 0
+  soilCount: 0

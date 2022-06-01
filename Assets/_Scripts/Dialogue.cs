@@ -16,25 +16,76 @@ public class Dialogue : MonoBehaviour
 
     private GameObject _curBalloon;
 
-    public int waterCount = 0;
-    public int seedCount = 0;
-
     public GameObject water;
     public GameObject care;
     public GameObject soil;
     public GameObject seed;
 
 
+
+    public GameObject Plant1;
+    public GameObject Plant2;
+    public GameObject Plant3;
+    public GameObject Plant4;
+    public GameObject Plant5;
+    public GameObject Plant6;
+    public GameObject Plant7;
+    public GameObject Plant8;
+    public GameObject Plant9;
+    public GameObject Plant10;
+    private List<GameObject> _plants;
+    //Im refers to Image change script
+    public ImageChange Imscript;
+    public int matchnum;
+    public BlockInstantiator BIscript;
+    //BI refers to block instantiator script
+    public int careCount;
+    public int waterCount;
+    public int seedCount;
+    public int soilCount;
+
+
     private void OnTriggerEnter(Collider col)
     {
-        /*if (gameobject.name == "water")
+        if (col.name.Contains("care"))
         {
-            //waterCount -= 1;
-            //seedCount -= 1;
+            careCount++;
+            insPlant();
+        }
+        if (col.name.Contains("Water"))
+        {
+            waterCount++;
+            insPlant();
+        }
+
+        if (col.name.Contains("seed"))
+        {
+            seedCount++;
+            insPlant();
+        }
+        if (col.name.Contains("Soil"))
+        {
+            soilCount++;
+            insPlant();
+        }
+        /*if (col.name.Contains("Water"))
+        {
+            waterCount++;
+        }
+
+        if (col.name.Contains("seed"))
+        {
+            seedCount++;
+        }
+
+        if (gameobject.name == "water")
+        {
+            waterCount -= 1;
+            seedCount -= 1;
             ////instantiate
-            return;
+            //return;
         }*/
-        if (col.tag != "Sticky") { return; }
+        //if (col.tag != "Sticky") { return; }
         Canvas canvas = FindObjectOfType<Canvas>();
         if (canvas == null) { return; }
 
@@ -58,10 +109,7 @@ public class Dialogue : MonoBehaviour
         { obj.SetActive(true); }
         
 
-        if(col.name.Contains("Water"))
-        {
-            waterCount++;
-        }
+        
 
         //audio
         if (audio1 == null) { return; }
@@ -72,7 +120,7 @@ public class Dialogue : MonoBehaviour
         c++;
         if (c >= clips.Length) { c = 0; }
 
-        //option 1
+        /*//option 1
         //dictionary setup
         Dictionary<string, GameObject> plantTypes = new Dictionary<string, GameObject>();
         plantTypes.Add("1_1", null);
@@ -85,9 +133,9 @@ public class Dialogue : MonoBehaviour
             string[] parts = type.Split('_');
             waterCount -= int.Parse(parts[0]);
             seedCount -= int.Parse(parts[1]);
-        }
+        }*/
 
-        //option 2
+        /*//option 2
         if (waterCount == 1 && seedCount == 1)
         {
             waterCount -= 1;
@@ -101,8 +149,24 @@ public class Dialogue : MonoBehaviour
             seedCount -= 1;
             //instantiate
             return;
+        }*/
+
+    }
+    private void insPlant()
+    {
+
+
+        if (careCount == 1 && waterCount == 1 && seedCount == 1 && soilCount == 1)
+        {
+            GameObject pblock = Instantiate(Plant3, this.transform.position, Quaternion.identity);
+
         }
 
+        else if (careCount == 1 && waterCount == 1 && seedCount == 2 && soilCount == 2)
+        {
+            GameObject pblock = Instantiate(Plant9, this.transform.position, Quaternion.identity);
+
+        }
     }
 
     private int c = 0;
