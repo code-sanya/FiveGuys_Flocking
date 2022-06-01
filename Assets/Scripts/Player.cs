@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     private float _turnSmoothVelocity;
     private Vector3 _velocity;
 
-    //Jump
+    /*//Jump
     public Vector3 jump;
 
     public float jumpForce = 2.0f;
@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
     private void OnCollisionStay()
     {
         _isGrounded = true;
-    }
+    }*/
 
     // Update is called once per frame
     private void Update()
@@ -49,13 +49,13 @@ public class Player : MonoBehaviour
         bool isGrounded = Physics.CheckSphere(GroundCheck.position, 0.4f, GroundMask);
         if (isGrounded && _velocity.y < 0) { _velocity.y = -2f; }
 
-        //Jump
+        /*//Jump
         if (Input.GetButton("North") && _isGrounded)
         {
             Debug.Log("Jump");
             rb.AddForce(jump * jumpForce, ForceMode.Impulse);
             _isGrounded = false;
-        }
+        }*/
 
         //Get Input
         float h = Input.GetAxisRaw("LeftJoyX");
