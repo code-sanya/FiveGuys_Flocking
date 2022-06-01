@@ -8,14 +8,15 @@ public class ImageChange : MonoBehaviour
     public Sprite[] images;
     public Image icon;
     public int num;
-    private float Time = 2f;
+    private float MinTime = 0f;
+    private float MaxTime = 5f;   
     
         
     // Start is called before the first frame update
-    void Start()
+    /*void Start()
     {
-        changeimage();
-    }
+        //changeimage();
+    }*/
 
     // Update is called once per frame
     void Update()
@@ -26,8 +27,8 @@ public class ImageChange : MonoBehaviour
 
     void changeimage()
     {
-        int randomNumber = Random.Range(0, 10);
-               
+        int randomNumber = Random.Range(0, 10);        
+
         /*if (Input.GetKey(KeyCode.Space))
         {
           
@@ -35,13 +36,15 @@ public class ImageChange : MonoBehaviour
             num = randomNumber;            
         }*/
 
-        /*if(Time)
+        MinTime += Time.deltaTime;
+        if (MinTime >= MaxTime)
         {
-
-            icon.sprite = images[randomNumber];
-            num = randomNumber;
-        }*/
-
+            foreach (Sprite image in images)
+            {
+                icon.sprite = images[randomNumber];
+                num = randomNumber;
+            }
+        }
 
     }
 }
