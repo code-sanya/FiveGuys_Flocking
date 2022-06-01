@@ -17,6 +17,9 @@ public class Player : MonoBehaviour
     private float _turnSmoothVelocity;
     private Vector3 _velocity;
 
+    //private GameObject player;
+
+
     /*//Jump
     public Vector3 jump;
 
@@ -76,4 +79,21 @@ public class Player : MonoBehaviour
         Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward; //get move direction
         Controller.Move(moveDir.normalized * Speed * Time.deltaTime); //moving player
     }
+    /*private void OnTriggerEnter(Collider col)
+    {
+        if (col.player.CompareTag("RemoveBI"))
+        {
+            collision.gameObject.GetComponent<BlockInstantiator>.enabled = false;
+            //GetComponent<BlockInstantiator>().enabled = false;            
+        }
+    }
+
+    private void OnTriggerExit(Collider col)
+    {
+        if (col.player.CompareTag("RemoveBI"))
+        {
+            collision.gameObject.GetComponent<BlockInstantiator>.enabled = true;
+            //GetComponent<BlockInstantiator>().enabled = false;            
+        }
+    }*/
 }

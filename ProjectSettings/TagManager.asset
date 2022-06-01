@@ -10,6 +10,7 @@ TagManager:
   - LightBlock
   - OpenSpaceBlock
   - Sticky
+  - RemoveBI
   layers:
   - Default
   - TransparentFX

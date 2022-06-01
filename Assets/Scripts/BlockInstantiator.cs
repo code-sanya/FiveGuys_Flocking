@@ -7,18 +7,23 @@ public class BlockInstantiator : MonoBehaviour
     public GameObject care;
     public GameObject water;
     public GameObject seed;
-    public GameObject soil;    
+    public GameObject soil;
+
+    private GameObject player;
+
     private List<GameObject> _blocks;
-    private float Time = 10f;
+    private float Time = 20f;
+
+    private BlockInstantiator blockInstantiator;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         _blocks = new List<GameObject>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (Input.GetButtonDown("North"))
         {
@@ -58,11 +63,21 @@ public class BlockInstantiator : MonoBehaviour
 
     }
 
-    /*private void OnTriggerExit(Collider col)
+   /*private void OnTriggerEnter(Collider col)
     {
-        if (col.gameobject.tag != "RemoveBI")
+        if (col.player.CompareTag("RemoveBI"))
         {
-            BlockInstantiator.enabled = false;
+            collision.gameObject.GetComponent<BlockInstantiator>.enabled = false;
+            //GetComponent<BlockInstantiator>().enabled = false;            
+        }        
+    }
+
+    private void OnTriggerExit(Collider col)
+    {
+        if (col.player.CompareTag("RemoveBI"))
+        {
+            collision.gameObject.GetComponent<BlockInstantiator>.enabled = true;
+            //GetComponent<BlockInstantiator>().enabled = false;            
         }
     }*/
 }
