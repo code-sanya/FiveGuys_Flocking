@@ -7,7 +7,7 @@ public class BlockInstantiator : MonoBehaviour
     public GameObject care;
     public GameObject water;
     public GameObject seed;
-    public GameObject soil;
+    public GameObject soil;    
     private List<GameObject> _blocks;
     private float Time = 10f;
 
@@ -54,7 +54,15 @@ public class BlockInstantiator : MonoBehaviour
             _blocks.Add(block);
             Destroy(block, Time);
             //Instantiate(Prefab,this.transform.position, Quaternion.identity);
-        }
+        }       
 
     }
+
+    /*private void OnTriggerExit(Collider col)
+    {
+        if (col.gameobject.tag != "RemoveBI")
+        {
+            BlockInstantiator.enabled = false;
+        }
+    }*/
 }
