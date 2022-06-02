@@ -12,7 +12,7 @@ public class BlockInstantiator : MonoBehaviour
     private GameObject player;
 
     private List<GameObject> _blocks;
-    private float Time = 20f;
+    private float Time = 30f;
 
     private BlockInstantiator blockInstantiator;
 

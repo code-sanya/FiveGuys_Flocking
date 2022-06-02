@@ -16,11 +16,11 @@ public class FlockManager : MonoBehaviour {
 
     // Header title for Unity Editor
     [Header("Fish Settings")]
-    [Range(0.0f,10.0f)]
+    [Range(0.0f,30.0f)]
     public float minSpeed;          // Minimum speed range
-    [Range(0.0f, 10.0f)]
+    [Range(0.0f, 30.0f)]
     public float maxSpeed;          // Maximum speed range
-    [Range(1.0f, 10.0f)]
+    [Range(1.0f, 30.0f)]
     public float neighbourDistance; // Prefab neighbout distance
     [Range(0.0f, 5.0f)]
     public float rotationSpeed;     // Speed at which the prefabs rotate
