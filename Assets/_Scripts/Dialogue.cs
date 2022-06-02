@@ -13,79 +13,14 @@ public class Dialogue : MonoBehaviour
  
     public GameObject []Appear;
 
-
     private GameObject _curBalloon;
-
-    public GameObject water;
-    public GameObject care;
-    public GameObject soil;
-    public GameObject seed;
-
-
-
-    public GameObject Plant1;
-    public GameObject Plant2;
-    public GameObject Plant3;
-    public GameObject Plant4;
-    public GameObject Plant5;
-    public GameObject Plant6;
-    public GameObject Plant7;
-    public GameObject Plant8;
-    public GameObject Plant9;
-    public GameObject Plant10;
-    private List<GameObject> _plants;
-    //Im refers to Image change script
-    public ImageChange Imscript;
-    public int matchnum;
-    public BlockInstantiator BIscript;
-    //BI refers to block instantiator script
-    public int careCount;
-    public int waterCount;
-    public int seedCount;
-    public int soilCount;
 
 
     private void OnTriggerEnter(Collider col)
     {
-        if (col.name.Contains("care"))
-        {
-            careCount++;
-            insPlant();
-        }
-        if (col.name.Contains("Water"))
-        {
-            waterCount++;
-            insPlant();
-        }
-
-        if (col.name.Contains("seed"))
-        {
-            seedCount++;
-            insPlant();
-        }
-        if (col.name.Contains("Soil"))
-        {
-            soilCount++;
-            insPlant();
-        }
-        /*if (col.name.Contains("Water"))
-        {
-            waterCount++;
-        }
-
-        if (col.name.Contains("seed"))
-        {
-            seedCount++;
-        }
-
-        if (gameobject.name == "water")
-        {
-            waterCount -= 1;
-            seedCount -= 1;
-            ////instantiate
-            //return;
-        }*/
-        //if (col.tag != "Sticky") { return; }
+        
+        
+        if (col.tag != "Sticky") { return; }
         Canvas canvas = FindObjectOfType<Canvas>();
         if (canvas == null) { return; }
 
@@ -152,22 +87,7 @@ public class Dialogue : MonoBehaviour
         }*/
 
     }
-    private void insPlant()
-    {
-
-
-        if (careCount == 1 && waterCount == 1 && seedCount == 1 && soilCount == 1)
-        {
-            GameObject pblock = Instantiate(Plant3, this.transform.position, Quaternion.identity);
-
-        }
-
-        else if (careCount == 1 && waterCount == 1 && seedCount == 2 && soilCount == 2)
-        {
-            GameObject pblock = Instantiate(Plant9, this.transform.position, Quaternion.identity);
-
-        }
-    }
+    
 
     private int c = 0;
 

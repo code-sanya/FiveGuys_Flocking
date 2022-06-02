@@ -11,6 +11,8 @@ TagManager:
   - OpenSpaceBlock
   - Sticky
   - RemoveBI
+  - care
+  - ScoreCount
   layers:
   - Default
   - TransparentFX

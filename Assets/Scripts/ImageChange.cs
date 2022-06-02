@@ -44,6 +44,7 @@ public class ImageChange : MonoBehaviour
                 icon.sprite = images[randomNumber];
                 num = randomNumber;
             }
+            MinTime = 0;
         }
 
     }

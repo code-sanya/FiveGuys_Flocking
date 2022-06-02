@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3489005895525950383}
   m_Layer: 6
   m_Name: Heart
-  m_TagString: Sticky
+  m_TagString: care
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
